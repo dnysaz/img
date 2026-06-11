@@ -1,0 +1,173 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Services from '../components/Services.astro';
+import Process from '../components/Process.astro';
+import WhyUs from '../components/WhyUs.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+import GlobalReach from '../components/GlobalReach.astro';
+
+const waLink = 'https://wa.me/6281339299209?text=Hello%20IMG%2C%20I%20need%20information%20about%20cruise%20line%20career%20opportunities';
+const igLink = 'https://www.instagram.com/intimarinaglobal';
+const linkedinLink = 'https://www.linkedin.com/company/inti-marina-global/';
+const webkalcerLink = 'https://webkalcer.com';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href="https://intimarinaglobal.com" />
+    <meta name="description" content="Inti Marina Global - Maritime & Hospitality Recruitment Agency based in Bali. Specializing in crew placement, training, and workforce solutions for the global maritime industry." />
+    <meta name="keywords" content="maritime recruitment, crew agency Bali, ship crew placement, hospitality recruitment, Inti Marina Global, maritime careers, Bali recruitment agency" />
+    <meta name="author" content="Inti Marina Global" />
+    <meta name="theme-color" content="#0D1829" />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Inti Marina Global - Maritime & Hospitality Recruitment Agency" />
+    <meta property="og:description" content="Based in Bali. Specializing in recruitment, training, and workforce placement for the maritime and hospitality industries." />
+    <meta property="og:image" content="https://pub-ba02358b32f843559b79dfd510299658.r2.dev/img-logo.jpg" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Inti Marina Global" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://pub-ba02358b32f843559b79dfd510299658.r2.dev/img-logo.jpg" />
+    <meta name="twitter:title" content="Inti Marina Global - Maritime & Hospitality Recruitment" />
+    <meta name="twitter:description" content="Global career opportunities in maritime and hospitality. Based in Bali, Indonesia." />
+
+    <script type="application/ld+json" is:inline>
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Inti Marina Global",
+        "description": "Recruitment, training, and workforce placement for the maritime and hospitality industries.",
+        "url": "https://intimarinaglobal.com",
+        "telephone": "+6281339299209",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Jl. Tukad Musi No.9c, Panjer",
+          "addressLocality": "Denpasar Selatan",
+          "addressRegion": "Bali",
+          "addressCountry": "ID",
+          "postalCode": "80234"
+        },
+        "foundingDate": "2022",
+        "areaServed": ["Global"],
+        "sameAs": [<%- JSON.stringify([igLink, linkedinLink]) %>]
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <style is:global>
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        font-family: 'Poppins', system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      ::selection {
+        background: #A83C2A;
+        color: white;
+      }
+      .reveal {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .reveal-left {
+        opacity: 0;
+        transform: translateX(-60px);
+        transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .reveal-left.visible {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      .reveal-right {
+        opacity: 0;
+        transform: translateX(60px);
+        transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .reveal-right.visible {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    </style>
+
+    <title>Inti Marina Global - Maritime & Hospitality Recruitment Agency | Bali</title>
+  </head>
+
+  <body class="bg-warm text-navy antialiased">
+    <Navbar />
+
+    <main>
+      <Hero />
+
+      <Services />
+
+      <About />
+
+      <Process />
+
+      <WhyUs />
+
+      <GlobalReach />
+
+      <Contact />
+    </main>
+
+    <Footer />
+
+    <!-- STICKY CTA (Mobile) -->
+    <div class="md:hidden fixed bottom-0 inset-x-0 z-50 bg-navy border-t border-navyLight px-4 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] flex gap-3">
+      <a href="#contact" class="flex-1 border border-white/20 text-white text-center py-3.5 text-sm font-bold hover:bg-white/5 transition-colors">
+        Contact Us
+      </a>
+      <a href="https://wa.me/6281339299209?text=Hello%20IMG%2C%20I%20need%20information%20about%20cruise%20line%20career%20opportunities" target="_blank" rel="noopener" class="flex-1 bg-brick text-white text-center py-3.5 text-sm font-bold hover:bg-brickLight transition-colors inline-flex items-center justify-center gap-2">
+        <i class="ri-whatsapp-fill text-sm"></i>
+        Chat WA
+      </a>
+    </div>
+
+    <script is:inline>
+      (function() {
+        var menuBtn = document.getElementById('menu-btn');
+        var menuClose = document.getElementById('menu-close');
+        var mobileMenu = document.getElementById('mobile-menu');
+        function openMenu() { mobileMenu.classList.remove('translate-x-full'); document.body.style.overflow = 'hidden'; }
+        function closeMenu() { mobileMenu.classList.add('translate-x-full'); document.body.style.overflow = ''; }
+        if (menuBtn) menuBtn.addEventListener('click', openMenu);
+        if (menuClose) menuClose.addEventListener('click', closeMenu);
+        if (mobileMenu) mobileMenu.querySelectorAll('a').forEach(function(l) { l.addEventListener('click', closeMenu); });
+
+        var reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+        if (reveals.length > 0 && 'IntersectionObserver' in window) {
+          var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+          reveals.forEach(function(el) { observer.observe(el); });
+        } else {
+          reveals.forEach(function(el) { el.classList.add('visible'); });
+        }
+      })();
+    </script>
+  </body>
+</html>

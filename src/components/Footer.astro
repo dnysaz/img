@@ -1,0 +1,31 @@
+---
+const instagram = 'https://www.instagram.com/intimarinaglobal';
+const tiktok = 'https://www.tiktok.com/@intimarinaglobal';
+const linkedin = 'https://www.linkedin.com/company/inti-marina-global/';
+const webkalcer = 'https://webkalcer.com';
+---
+
+<footer class="bg-navy border-t border-navyLight py-12 md:mb-0 mb-12">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+    <a href="#" class="flex items-center gap-3">
+      <img src="https://pub-ba02358b32f843559b79dfd510299658.r2.dev/img-logo.jpg" alt="Inti Marina Global" class="h-10 w-auto" />
+      <span class="text-base font-black text-white tracking-tight">INTI MARINA</span>
+      <span class="text-xs text-white/30">GLOBAL</span>
+    </a>
+
+    <div class="flex items-center gap-6">
+      <a href={instagram} target="_blank" rel="noopener" class="text-white/40 hover:text-white transition-colors" aria-label="Instagram">
+        <i class="ri-instagram-line text-2xl"></i>
+      </a>
+      <a href={tiktok} target="_blank" rel="noopener" class="text-white/40 hover:text-white transition-colors" aria-label="TikTok">
+        <i class="ri-tiktok-line text-2xl"></i>
+      </a>
+      <a href={linkedin} target="_blank" rel="noopener" class="text-white/40 hover:text-white transition-colors" aria-label="LinkedIn">
+        <i class="ri-linkedin-box-line text-2xl"></i>
+      </a>
+    </div>
+
+    <p class="text-xs text-white/30">2022 &copy; Inti Marina Global. All rights reserved.</p>
+    <p class="text-xs text-white/30">Built by <a href={webkalcer} target="_blank" rel="noopener" class="text-white/50 hover:text-white transition-colors">Webkalcer.com</a></p>
+  </div>
+</footer>
